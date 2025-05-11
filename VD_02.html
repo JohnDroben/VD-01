@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание VD_02</title>
+  <style>
+        html {
+            font-family: sans-serif;
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            background: purple;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            line-height: 100px;
+            margin: 0;
+        }
+        section {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 400px;
+            height: 650px;
+            background-color: burlywood;
+            border-radius: 60px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden; /* Скрывает выходящие за границы элементы */
+        }
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+            background-color: #d2a679;
+        }
+        .card:hover .photo img {
+            transform: scale(1.05);
+        }
+        .photo {
+            height: 40%;
+            padding: 40px;
+            transition: inherit;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+        .name {
+            padding: 0 20px;
+        }
+        .name h1 {
+            font-size: 1.2em;
+            line-height: 1.4;
+            margin: 10px 0;
+            transition: color 0.3s ease;
+        }
+        /* Дополнительный эффект для текста */
+        .card:hover .name h1 {
+            color: #444;
+        }
+        a:link {
+             color: royalblue;
+        }
+        a:visited {
+            color: olivedrab;
+        }
+        a:active{
+            color: deeppink;
+        }
+        a {
+            text-decoration: none;
+        }
+        .name h2 {
+            font-size: 1em; /* Уменьшаем размер для email */
+            margin: 8px 0;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Наши карточки</h1>
+    </header>
+
+    <section>
+        <div class="card">
+            <div class="photo">
+                <img src="images/старик.jpeg">
+            </div>
+            <div class="name">
+                <h1>Иванов Петр Петрович</h1>
+                <h2>E-mail: <a href="mailto:qwerty_1@mail.com">qwerty_1@mail.com</a> </h2>
+                <h2>Дата рождения: 10.05.1960</h2>
+                <h2>Место рождения: г. Москва</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="photo">
+                <img src="images/девочка.jpeg">
+            </div>
+            <div class="name">
+                <h1>Иванова Мария Васильевна</h1>
+                <h2>E-mail: <a href="mailto:qwerty_2@mail.com">qwerty_2@mail.com</a></h2>
+                <h2>Дата рождения: 10.08.2020</h2>
+                <h2>Место рождения: г. Москва</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="photo">
+                <img src="images/персонаж.jpeg">
+            </div>
+            <div class="name">
+                <h1>Иванов Василий Петрович</h1>
+                <h2>E-mail: <a href="mailto:qwerty_3@mail.com">qwerty_3@mail.com</a></h2>
+                <h2>Дата рождения: 05.08.2000</h2>
+                <h2>Место рождения: г. Москва</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="images/мальчик.jpeg">
+            </div>
+            <div class="name">
+                <h1>Иванов Артем Васильевич</h1>
+                <h2>E-mail: <a href="mailto:qwerty_4@mail.com">qwerty_4@mail.com</a></h2>
+                <h2>Дата рождения: 05.08.2020</h2>
+                <h2>Место рождения: г. Москва</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
